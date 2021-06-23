@@ -35,3 +35,27 @@ let pages = {
         };
         xhr.open('GET', 'page3.html');
         xhr.send();
+        
+
+        function buttonClick(event) {
+
+            let page = event.target.id;
+            console.log(page);
+
+            if (event.target.localName = 'button' ) {
+            let xhr = new XMLHttpRequest(); 
+            xhr.onload = loadPageContent;
+            xhr.open('GET', `/files/${page}.html`)
+            xhr.send();
+            }
+        }
+            
+            document.addEventListener("DOMContentLoaded", function() // load pagel by default In page load
+            
+            // page1, page2, page3 click events
+            
+            document.getElementById('action_buttons').addEventListener('click', buttonClick);
+            
+            // document.getElementById('page1').addEventListener('click', buttonClick);
+            
+            // document.getElementById('page2').addEventListener('click', buttonClick); // document.getElementById('page3').addEventListener('click', buttonClick);
