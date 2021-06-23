@@ -2,7 +2,7 @@
 document.getElementById("page1").onclick = function() {myFunction()};
 document.getElementById("page2").onclick = function() {myFunction()};
 document.getElementById("page3").onclick = function() {myFunction()};
-var myFunction = function
+
 function myFunction() {
     document.getElementById("page1").addEventListener('click', function(e) {
         let page1 = new XMLHttpRequest();
