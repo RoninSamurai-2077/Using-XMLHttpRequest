@@ -1,9 +1,9 @@
 // handle button clicks
-document.getElementById("page1").onclick = function();
-document.getElementById("page2").onclick = function();
-document.getElementById("page3").onclick = function();
+document.getElementById("page1").onclick = function() {myFunction()};
+document.getElementById("page2").onclick = function() {myFunction()};
+document.getElementById("page3").onclick = function() {myFunction()};
 
-function{
+function myFunction() {
     document.getElementById("page1").addEventListener('click', function(e)) {
         let page1 = new XMLHttpRequest();
         page1.onload = function() {
